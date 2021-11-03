@@ -136,7 +136,7 @@ footer p {
 
 
 
-}
+
 /* 大きな背景画像 */
 .big-bg {
   background-size: cover;
@@ -342,12 +342,10 @@ footer p {
       font-size: 2.5rem;
   }
 
-
   .page-header {
       flex-direction: column;
       align-items: center;
   }
-
 
   /* HEADER */
   .main-nav {
@@ -395,7 +393,6 @@ footer p {
   aside {
       width: 100%;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -460,4 +457,4 @@ footer p {
   .post-cat {
       margin-left: 80px;
   }
-
+}
