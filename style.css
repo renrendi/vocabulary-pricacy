@@ -1,0 +1,464 @@
+html {
+  background-color: white;
+  font-size: 100%;
+}
+
+/* 一番大きな見出し */
+h1 {
+  font-size: 2rem;
+}
+
+
+
+
+
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+
+
+/* ヘッダーのみの装飾 */
+.page-header {
+  display: flex; /*横並びの指定 */
+  justify-content: space-between;/*両端の位置に指定 */
+}
+
+/* ヘッダーのナビゲーションメニュー */
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li {
+  margin-left: 36px;
+}
+.main-nav a {
+  color: #432;
+}
+.main-nav a:hover {
+  color: #0bd;
+}
+/* コンテンツの最大表示幅 */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+
+
+/* 本文の横幅 */
+article {
+  width: 65%;
+  border: solid 0px #e6e5e5;
+  padding: 0px;
+  padding-bottom: 80px;
+}
+
+/* サイドバーの横幅 */
+aside {
+  width: 25%;
+  border: solid 0px #e6e5e5;
+  padding: 10px;
+}
+aside p {
+  padding: 2px 2px;
+}
+
+/* サイドバーメニュー */
+.sub-title {
+  border-bottom: 2px black solid;
+  font-weight: normal;
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* 本文(サイドバーも含む) */
+.privacy-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+
+}
+
+/* 本文タイトルの装飾 */
+.post-maintitle {
+  font-size: 26px;
+  padding-bottom: 6px;
+}
+.post-title {
+  font-size: 26px;
+  border-bottom: 3px solid rgb(155, 149, 149);
+  padding-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+
+/* フッターの指定 */
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+}
+/* フッターの文章の指定 */
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+
+
+
+}
+/* 大きな背景画像 */
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+
+/* コンタクトフォーム */
+
+.Form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+@media screen and (max-width: 480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+.Form-Item:nth-child(5) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* スマホ */
+@media (max-width: 600px) {
+  h1 {
+      color: #0bd;
+  }
+}
+@media (max-width: 600px) {
+  .page-title {
+      font-size: 2.5rem;
+  }
+
+  /* ヘッダー */
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+      margin-top: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+      font-size: 2.5rem;
+  }
+
+
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+
+  /* HEADER */
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+      margin-top: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-title {
+      font-size: 2.5rem;
+  }
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* HEADER */
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+      margin-top: 20%;
+  }
+
+  /* NEWS */
+  .news-contents {
+      flex-direction: column;
+  }
+  article,
+  aside {
+      width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .page-title {
+      font-size: 2.5rem;
+  }
+  .page-header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  /* HEADER */
+  .main-nav {
+      font-size: 1rem;
+      margin-top: 10px;
+  }
+  .main-nav li {
+      margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+      margin-top: 20%;
+  }
+
+  /* NEWS */
+  .news-contents {
+      flex-direction: column;
+  }
+  article,
+  aside {
+      width: 100%;
+  }
+
+
+  #news .page-title {
+      margin-top: 30px;
+  }
+  aside {
+      margin-top: 60px;
+  }
+  .post-info {
+      margin-bottom: 30px;
+  }
+  .post-date {
+      width: 70px;
+      height: 70px;
+      font-size: 1rem;
+  }
+  .post-date span {
+      font-size: 0.875rem;
+      padding-top: 2px;
+  }
+  .post-title {
+      font-size: 1.375rem;
+  }
+  .post-cat {
+      font-size: 0.875rem;
+      margin-top: 10px;
+  }
+  .post-title,
+  .post-cat {
+      margin-left: 80px;
+  }
+
+}
